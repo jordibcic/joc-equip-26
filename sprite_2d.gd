@@ -10,5 +10,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	print("M'agraden les nyores.")
 	var direccio := Input.get_vector("ui_left","ui_right","ui_up","ui_down")
 	global_position += direccio * velocitat * delta
